@@ -4,7 +4,7 @@
 
 ## Investigate Google Geocoding API service and create test plan
 
-- [link1](https://developers.google.com/maps/documentation/geocoding/intro#Geocoding)
+- [Link for Google Geocoding API service](https://developers.google.com/maps/documentation/geocoding/intro#Geocoding)
 
 
 -	Write test cases for this service
