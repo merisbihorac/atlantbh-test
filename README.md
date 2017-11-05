@@ -13,4 +13,3 @@
 5.	Create Github repository and push your assignment solution with the documentation on how to run the automated tests there
 
 ## Note: Write test cases/test script for API (NOT for UI that is also available in documentation above)
-
