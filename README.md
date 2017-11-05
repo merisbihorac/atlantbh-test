@@ -1,4 +1,4 @@
-### ![Slika1](./slike/atlant.jpg =250x)
+### <img src="./slike/atlant.jpg" alt="ABHlogo" style="width: 200px;"/>
 # This is ABH testing task
 
 ## Investigate Google Geocoding API service and create test plan
