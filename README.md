@@ -14,13 +14,3 @@
 
 ## Note: Write test cases/test script for API (NOT for UI that is also available in documentation above)
 
-
-
-
-## Ovako se ubacuje slika
-
-![Slika1](./slike/Slika1.PNG)
-
-Neke nove izmjene koje pišemo
-
-### Steps
