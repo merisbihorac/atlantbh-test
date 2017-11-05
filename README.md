@@ -1,5 +1,5 @@
 ### 
-![Slika1](./slike/atlantbh.jpg)
+![Slika1](./slike/atlant.jpg)
 # This is ABH testing task
 
 ## Investigate Google Geocoding API service and create test plan
