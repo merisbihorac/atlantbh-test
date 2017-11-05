@@ -1,5 +1,5 @@
-### <img src="./slike/atlant.jpg" alt="ABHlogo" style="width: 100px;"/>
-# This is ABH testing task
+### 
+# This is ABH testing task <img src="./slike/atlant.jpg" alt="ABHlogo" style="width: 100px;"/>
 
 ## Investigate Google Geocoding API service and create test plan
 
