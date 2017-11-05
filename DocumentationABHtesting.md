@@ -1,1 +1,1 @@
-# Dokumentacija se nalazi u pdf fajlu
+#assignment solution will be posted in this repo
