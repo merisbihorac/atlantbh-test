@@ -1,4 +1,4 @@
-# assignment solution is posted as .pdf
+# Assignment solution is posted as .pdf
 
 ## After running SoapUI 5.3.0 there is basic scenario:
 1.	File/Create new REST project
