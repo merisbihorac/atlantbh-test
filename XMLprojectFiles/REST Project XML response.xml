@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4fc2cb18-dc53-4c7f-a5fc-4fdb02a3cc95" activeEnvironment="Default" name="REST Project XML response" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="basic"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="C:\dev\reports"/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="a59aa950-0b47-4b7a-8905-dccfa4324451" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://maps.googleapis.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://maps.googleapis.com</con:endpoint></con:endpoints><con:resource name="Xml" path="/maps/api/geocode/xml" id="e47fe94d-3996-4481-800f-c5ed851418be"><con:settings/><con:parameters><con:parameter><con:name>address</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>key</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Xml 1" id="dba15802-ef67-4e15-b101-7a167cb7ef5f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/xml; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>GeocodeResponse</con:element></con:representation><con:request name="Request 1" id="99143338-1868-4371-abda-3a84b5448277" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/xml</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="address" value="1600+Amphitheatre+Parkway,+Mountain+View,+CA"/>
+  <con:entry key="key" value="AIzaSyDdbt98IV5LIS_RwE6TNBi_uOBV0SjaeSQ"/>
+</con:parameters><con:parameterOrder><con:entry>address</con:entry><con:entry>key</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="2ba1148e-e4b8-419f-b187-2d79db2a03a8" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7123ff48-a379-4446-ad30-66e3da9b6415" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="basic" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Basic" id="d9f6414a-748a-4610-a2b1-7b20c5cde4f2"><con:settings/><con:config service="https://maps.googleapis.com" resourcePath="/maps/api/geocode/xml" methodName="Xml 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Basic" id="99143338-1868-4371-abda-3a84b5448277" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/xml</con:originalUri><con:assertion type="Simple Contains" id="f3328e8f-6bce-4266-a2d1-3684b77f96ec" name="Contains"><con:configuration><token>&lt;status>OK</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="address" value="1601+Amphitheatre+Parkway,+Mountain+View,+CA"/>
+  <con:entry key="key" value="AIzaSyDdbt98IV5LIS_RwE6TNBi_uOBV0SjaeSQ"/>
+</con:parameters><con:parameterOrder><con:entry>address</con:entry><con:entry>key</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="basic2" id="bf856b88-5d06-4f17-990d-2a9d28cf8508"><con:settings/><con:config service="https://maps.googleapis.com" methodName="Xml 1" resourcePath="/maps/api/geocode/xml" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="basic2" id="80e98566-905d-4660-a0f7-6bb326c55daa" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/xml</con:originalUri><con:assertion type="Simple Contains" id="74e4a13c-9f52-415f-a2f1-4ad5ba2929b3" name="Contains"><con:configuration><token>&lt;status>OK</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="address" value="Marka Marulica, Sarajevo, 71000, Novo Sarajevo"/>
+  <con:entry key="key" value="AIzaSyDdbt98IV5LIS_RwE6TNBi_uOBV0SjaeSQ"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

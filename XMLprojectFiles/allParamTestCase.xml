@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="118e3943-dd66-43d4-95a7-b688d712ebe8" activeEnvironment="Default" name="allParam" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="allParam"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="allParam"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="C:\dev\reports"/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="4211ffbc-6667-479c-b8e8-3118476628e4" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://maps.googleapis.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://maps.googleapis.com</con:endpoint></con:endpoints><con:resource name="Json" path="/maps/api/geocode/json" id="9bdb6319-864e-4795-aa66-40fb0c301f60"><con:settings/><con:parameters><con:parameter><con:name>address</con:name><con:value>1600 Amphitheatre Pkwy</con:value><con:style>QUERY</con:style><con:default>1600 Amphitheatre Pkwy</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>key</con:name><con:value>AIzaSyAM8wMdZcHjJ5bCNLSZTzRStEfXXMzgFxs</con:value><con:style>QUERY</con:style><con:default>AIzaSyAM8wMdZcHjJ5bCNLSZTzRStEfXXMzgFxs</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>language</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>region</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>components</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>postal_code</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Json 1" id="633ecd6a-d138-4e3b-8785-29f29f3fdc94" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:json="https://maps.googleapis.com/maps/api/geocode/json">json:Response</con:element></con:representation><con:request name="Request 1" id="7f392294-68aa-449e-af11-299c672f99f3" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="region" value="US"/>
+  <con:entry key="postal_code" value="94043"/>
+  <con:entry key="components" value="administrative_area:TX|country:US"/>
+  <con:entry key="language" value="en"/>
+  <con:entry key="key" value="AIzaSyAM8wMdZcHjJ5bCNLSZTzRStEfXXMzgFxs"/>
+</con:parameters><con:parameterOrder><con:entry>address</con:entry><con:entry>components</con:entry><con:entry>key</con:entry><con:entry>language</con:entry><con:entry>region</con:entry><con:entry>postal_code</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="c8792321-c63b-41ce-997c-29dfb7cdfce5" name="allParam"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7a4ed5b8-72a2-4d70-ae8a-a5621827a88b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="allParam" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Regular" id="cfdeeeef-616f-413b-896a-c752a75a41fe"><con:settings/><con:config service="https://maps.googleapis.com" resourcePath="/maps/api/geocode/json" methodName="Json 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Regular" id="7f392294-68aa-449e-af11-299c672f99f3" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:assertion type="Simple Contains" id="1d85e982-da2d-4212-9aac-075131ffda06" name="Contains"><con:configuration><token>"OK"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="17b5bd09-d81b-4eef-837f-a8fa41ffc4c5"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="region" value="us"/>
+  <con:entry key="postal_code" value="94043"/>
+  <con:entry key="components" value="administrative_area:TX|country:US"/>
+  <con:entry key="language" value="en"/>
+  <con:entry key="key" value="AIzaSyAM8wMdZcHjJ5bCNLSZTzRStEfXXMzgFxs"/>
+</con:parameters><con:parameterOrder><con:entry>address</con:entry><con:entry>components</con:entry><con:entry>key</con:entry><con:entry>language</con:entry><con:entry>region</con:entry><con:entry>postal_code</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="NegativeTest" id="2878c822-4966-41e6-9bcd-02ec70c0946f"><con:settings/><con:config service="https://maps.googleapis.com" methodName="Json 1" resourcePath="/maps/api/geocode/json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="NegativeTest" id="9b8c483f-b7f5-4393-99c5-599332974a7e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request/><con:originalUri>https://maps.googleapis.com/maps/api/geocode/json</con:originalUri><con:assertion type="Simple Contains" id="dda5b2c5-3909-45e4-a1c9-045db38bbee7" name="Contains"><con:configuration><token>"OK"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="region" value="sda"/>
+  <con:entry key="address" value="Prelijepa"/>
+  <con:entry key="postal_code" value="dsa"/>
+  <con:entry key="components" value="sad"/>
+  <con:entry key="language" value="dsa"/>
+  <con:entry key="key" value="AIzaSyAM8wMdZcHjJ5bCNLSZTzRStEfXXMzgFxs"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
