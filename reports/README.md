@@ -1,2 +1,2 @@
 ### 
-### This is only report from automated Smoke Test, launched with TestRunner
+### This is the only report of automated Smoke Test, launched with TestRunner
